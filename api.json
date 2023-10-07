@@ -1,0 +1,113 @@
+{
+  "uuid": "208820e8-7a01-454e-834f-ed2427266c5a",
+  "lastMigration": 24,
+  "name": "Todo",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "127.0.0.1",
+  "routes": [
+    {
+      "uuid": "fe1f2202-a627-4a99-a078-e2a1f01cbb25",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "shopping",
+      "responses": [
+        {
+          "uuid": "51f2e8ce-6e27-4e2c-adce-5c0dec7bbdfa",
+          "body": "[\n  {\n    \"item_name\": \"Orange\",\n    \"category_name\": \"Grocery\",\n    \"month\": \"Jan\",\n    \"week\": \"01\",\n    \"year\": \"2023\",\n    \"image\": \"https://cdn-icons-png.flaticon.com/128/6866/6866499.png\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "54377db5-8113-4233-92a8-e7aec60934cd",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "shopping_category",
+      "responses": [
+        {
+          "uuid": "ff3a4a17-aba6-4e2a-a19c-ab5cb70d888a",
+          "body": "{\n  \"2023\": {\n    \"1\": {\n      \"1\": {\n        \"item_name\": \"Mango\",\n        \"category_name\": \"grocery\"\n      },\n      \"2\": {\n        \"item_name\": \"Orange\",\n        \"category_name\": \"grocery\"\n      }\n    }\n  },\n  \"2022\": {\n    \"1\": {\n      \"1\": {\n        \"item_name\": \"Mango\",\n        \"category_name\": \"grocery\"\n      },\n      \"2\": {\n        \"item_name\": \"Orange\",\n        \"category_name\": \"grocery\"\n      }\n    }\n  },\n  \"2024\": {\n    \"1\": {\n      \"1\": {\n        \"item_name\": \"Mango\",\n        \"category_name\": \"grocery\"\n      },\n      \"2\": {\n        \"item_name\": \"Orange\",\n        \"category_name\": \"grocery\"\n      }\n    }\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept,Authorization,Content-Length, X-Requested-With"
+    },
+    {
+      "key": "Access-Control-Allow-Credentials",
+      "value": "false"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
